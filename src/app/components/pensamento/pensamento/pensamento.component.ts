@@ -9,5 +9,10 @@ import {Component, Input} from '@angular/core';
 })
 export class PensamentoComponent {
 
-  @Input() pensamento = {}
+  @Input() pensamento = {
+    conteudo: '',
+    autoria: '',
+    modelo: ''
+  }
+
 }

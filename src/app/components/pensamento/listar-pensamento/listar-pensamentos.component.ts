@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {RouterLink} from "@angular/router";
 import {PensamentoComponent} from "../pensamento/pensamento.component";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-listar-pensamento',
@@ -9,7 +9,8 @@ import {NgForOf} from "@angular/common";
   imports: [
     RouterLink,
     PensamentoComponent,
-    NgForOf
+    NgForOf,
+    NgIf
   ],
   templateUrl: './listar-pensamentos.component.html',
   styleUrl: './listar-pensamentos.component.css'
@@ -17,16 +18,16 @@ import {NgForOf} from "@angular/common";
 export class ListarPensamentosComponent {
 
   listaPensamentos = [
-    {
-      conteudo: 'Passo propriedades para o componente filho',
-      autoria: 'Componente pai',
-      modelo: 'modelo3'
-    },
-    {
-      conteudo: 'Minha propriedade é decorada com @Input()',
-      autoria: 'Componente filho',
-      modelo: 'modelo2'
-    },
+    // {
+    //   conteudo: 'Passo propriedades para o componente filho',
+    //   autoria: 'Componente pai',
+    //   modelo: 'modelo3'
+    // },
+    // {
+    //   conteudo: 'Minha propriedade é decorada com @Input()',
+    //   autoria: 'Componente filho',
+    //   modelo: 'modelo2'
+    // },
   ]
 
 }
